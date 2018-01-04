@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio CBMC C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the CBMC GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+

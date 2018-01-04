@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<block>
+  <name>Frequency Correction</name>
+  <key>cbmc_freq_sps_det</key>
+  <category>[cbmc]</category>
+  <import>import cbmc</import>
+  <make>cbmc.freq_sps_det($decimation, $fft_size)</make>
+  
+  <param>
+    <name>Decimaton</name>
+    <key>decimation</key>
+    <value>512</value>
+    <type>complex</type>
+  </param>
+  
+  <param>
+    <name>Goertzel Factor</name>
+    <key>fft_size</key>
+    <value>512</value>
+    <type>int</type>
+  </param>
+  
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+  
+</block>

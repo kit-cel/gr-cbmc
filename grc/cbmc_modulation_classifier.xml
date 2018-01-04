@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<block>
+  <name>Modulation Classifier</name>
+  <key>cbmc_modulation_classifier</key>
+  <category>[cbmc]</category>
+  <import>import cbmc</import>
+  <make>cbmc.modulation_classifier($decimation, $probe)</make>
+  
+  <param>
+    <name>Decimaton</name>
+    <key>decimation</key>
+    <value>512</value>
+    <type>complex</type>
+  </param>
+
+  <param>
+    <name>Probe</name>
+    <key>probe</key>
+    <type>bool</type>
+		<option>
+			<name>Off</name>
+			<key>False</key>
+		</option>
+		<option>
+			<name>On</name>
+			<key>True</key>
+		</option>
+  </param>
+  
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+  
+</block>
